@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            background-image:url(../基础班课程资料/code/day04/案例/images/1.png);
+            /* 背景图默认平铺效果,复制填满 */
+            
+            background-repeat: repeat;
+            /* 平铺 */
+            background-repeat: repeat-x;
+            /* 水平方向平铺 */
+            background-repeat: repeat-y;
+            /* 竖直方向平铺 */
+            background-repeat: no-repeat;
+            /* 不平铺 */
+
+            /* background-position: 0 0; */
+            /* background-position: right bottom; */
+            /* background-position: -50px 0; */
+            background-position: bottom left;
+            background-position: bottom ;
+            /* 水平方向:正数向右,负数向左;垂直方向:正数向下,负数向上 */
+            /* 关键字只写一个,另一个自动居中 */
+            
+            background-size: contain;
+            /* 缩放到完全盖住背景区 */
+            background-size: cover;
+            /* 缩放到长宽有一个达到 */
+            background-size: 100%;
+            /* 根据盒子尺寸计算 */
+            background-size: 300px;
+
+            background-attachment: fixed;
+            /* 背景图固定 */
+        }
+    </style>
+</head>
+<body>
+    <div>div标签</div>
+</body>
+</html>
