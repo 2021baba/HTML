@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+            margin: 10px auto;
+            width: 1200px;
+            /* height: 300px; */
+            /* 父级无高时,浮动会产生影响 */
+            background-color: pink;
+
+            overflow: hidden;
+            /* overflow: hidden;清除浮动 */
+        }
+
+
+        .left {
+            width: 200px;
+            height: 300px;
+            background-color: skyblue;
+            float: left;
+        }
+
+        .right {
+            width: 950px;
+            height: 300px;
+            background-color: orange;
+            float: right;
+        }
+
+        .bottom {
+            height: 100px;
+            background-color: brown;
+        }
+
+        .clearfix {
+            clear: both
+        }
+
+
+
+        .clear::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        /* 单伪类元素清除法 */
+
+
+        /* 双伪类元素清除法 */
+        /* .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+        }
+        .clearfix::after {
+            clear:both;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="top clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="clearfix"></div>
+        <!-- 在父级内容最后加一个块级标签,添加属性clear:both -->
+    </div>
+    <div class="bottom"></div>
+</body>
+
+</html>
