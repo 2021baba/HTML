@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+
+            justify-content: flex-start;
+            /* 默认为沿主轴左对齐 */
+
+            justify-content: flex-end;
+            /*沿主轴右对齐*/
+
+            justify-content: center;
+            /*居中对齐*/
+
+            justify-content: space-between;
+            /*在弹性盒子之间产生空白间距,父级剩下尺寸分配为间距*/
+
+            justify-content: space-around;
+            /*在弹性盒子两侧产生空白间距,父级剩下尺寸分配为间距*/
+            /*盒子之间距离是两侧两倍*/
+
+            justify-content: space-evenly;
+            /*在弹性盒子两侧产生空白间距,父级剩下尺寸分配为间距*/
+            /*各个间距相等*/
+
+            height: 300px;
+            border: 1px solid #000;
+        }
+
+        .box div {
+
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+</body>
+
+</html>
