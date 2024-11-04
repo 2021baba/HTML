@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* 弹性换行 */
+
+            /* 调整行对齐方式 ,只对一行以上弹性盒子生效*/
+            align-content: center;
+            /* 居中 */
+
+            align-content: flex-start;
+            /* 从上向下排 */
+
+            align-content: flex-end;
+            /* 从下向上排 */
+
+            align-content: space-between;
+            /* 在两行之间有空隙 */
+
+            align-content: space-around;
+            /* 行两侧有间隙 */
+
+            align-content: space-evenly;
+            /* 行间距平均 */
+
+            height: 300px;
+            border: 1px solid #000;
+        }
+
+
+        .box div {
+
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+
+    </div>
+
+</body>
+
+</html>
